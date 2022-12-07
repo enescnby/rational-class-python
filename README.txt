@@ -12,5 +12,5 @@ METHODS:
 
 
                                                                                                        
-                                                                          ### Writed by Enes CANBAY ###
+                                                                           ### Writed by Enes CANBAY ###
                                                                         ### Last Update: December/6/2022 ###

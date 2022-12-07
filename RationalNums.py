@@ -1,8 +1,28 @@
 class rational:
     def __init__(self,top,bottom):
-        self.top=top
-        self.bottom=bottom
+        if type(top)==int and type(bottom)==int: 
+            self.top=top
+            self.bottom=bottom
 
+        elif type(top)==float and type(bottom)==float:
+            top_part_list=str(top).split(".")
+            bottom_part_list=str(bottom).split(".")
+            exp_num=max(len(top_part_list[1]),len(bottom_part_list[1]))
+            self.top=int(top*10**exp_num)
+            self.bottom=int(bottom*10**exp_num)
+        
+        elif type(top)==float or type(bottom)==int:
+            top_part_list=str(top).split(".")
+            exp_num=len(top_part_list[1])
+            self.top=int(top*10**exp_num)
+            self.bottom=bottom*10**exp_num
+
+        elif type(top)==int or type(bottom)==float:
+            bottom_part_list=str(bottom).split(".")
+            exp_num=len(bottom_part_list[1])
+            self.bottom=int(bottom*10**exp_num)
+            self.top=top*10**exp_num
+    
     def __str__(self):
         return str(self.top)+"/"+str(self.bottom)
 
@@ -14,7 +34,10 @@ class rational:
     def __sub__(self,other):
         top=self.top*other.bottom-self.bottom*other.top
         bottom=self.bottom*other.bottom
-        return rational(top,bottom)
+        if self>other:
+            return rational(abs(top),bottom)
+        else:
+            return rational(top,bottom)
 
     def __mul__(self,other):
         top=self.top*other.top
@@ -89,6 +112,5 @@ class rational:
                 gcd=i
         return rational(int(self.top/gcd),int(self.bottom/gcd))
     
-a=rational(2,3)
-b=rational(100,6)
-print(a.expanse(8))
+a=rational(2,3.55)
+print(a.simplify())
