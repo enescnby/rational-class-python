@@ -127,6 +127,3 @@ class rational:
             else:
                 print(f"Can not be simplify with {num}")
                 return rational(self.top,self.bottom)
-
-a=rational(2.5,1).simplify()
-print(a)
