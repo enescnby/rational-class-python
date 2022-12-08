@@ -1,5 +1,11 @@
+class ParameterError(Exception):
+    def __init__(self,message="The parameters of rational num's must be an integer or float"):
+        self.msg=message
+    def __str__(self):
+        return str(self.msg)
+
 class rational:
-    def __init__(self,top,bottom):
+    def __init__(self,top:int,bottom:int):
         if type(top)==int and type(bottom)==int: 
             self.top=top
             self.bottom=bottom
@@ -11,17 +17,20 @@ class rational:
             self.top=int(top*10**exp_num)
             self.bottom=int(bottom*10**exp_num)
         
-        elif type(top)==float or type(bottom)==int:
+        elif type(top)==float and type(bottom)==int:
             top_part_list=str(top).split(".")
             exp_num=len(top_part_list[1])
             self.top=int(top*10**exp_num)
             self.bottom=bottom*10**exp_num
 
-        elif type(top)==int or type(bottom)==float:
+        elif type(top)==int and type(bottom)==float:
             bottom_part_list=str(bottom).split(".")
             exp_num=len(bottom_part_list[1])
             self.bottom=int(bottom*10**exp_num)
             self.top=top*10**exp_num
+
+        else:
+            raise ParameterError()
     
     def __str__(self):
         return str(self.top)+"/"+str(self.bottom)
@@ -102,15 +111,22 @@ class rational:
         bottom=self.bottom*expansation_num
         return rational(top,bottom)
 
-    def simplify(self):
-        if abs(self.top)>abs(self.bottom):
-            small_num=self.bottom
-        else:
-            small_num=self.top
-        for i in range(1,abs(small_num)+1):
-            if self.top%i==0 and self.bottom%i==0:
-                gcd=i
-        return rational(int(self.top/gcd),int(self.bottom/gcd))
-    
-a=rational(2,3.55)
-print(a.simplify())
+    def simplify(self,num=None):
+        if num==None:
+            if abs(self.top)>abs(self.bottom):
+                small_num=self.bottom
+            else:
+                small_num=self.top
+            for i in range(1,abs(small_num)+1):
+                if self.top%i==0 and self.bottom%i==0:
+                    gcd=i
+            return rational(int(self.top/gcd),int(self.bottom/gcd))
+        elif type(num)==int:
+            if self.top%num==0 and self.bottom%num==0:
+                return rational(int(self.top/num),int(self.bottom/num))
+            else:
+                print(f"Can not be simplify with {num}")
+                return rational(self.top,self.bottom)
+
+a=rational(2.5,1).simplify()
+print(a)

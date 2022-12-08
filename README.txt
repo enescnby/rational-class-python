@@ -2,15 +2,39 @@
 
 Class in Python for rational numbers that symbolyzing like "5/6".
 
+A) __init__ phase:
+
+--> The numerator and denominator of rational number must be an integer in this class. 
+
+--> If the user inputs the decimal number(float), __init__ method converts the numerator and denominator to an integer based on mathematical rules. 
+
 
 METHODS:
 
-1) simplify --> This method makes the rational number that it takes as an argument the simplest. Example: rational(10,5).simplify() --> rational(2,1)
-2) expanse --> This method takes an argument and expanses the rational number with this argument. Example: rational(2,3).expanse(5) --> rational(10,15)
+1) simplify():
+    
+    --> This method makes the rational number the simplest if it has no parameter.
+    
+    --> If the user gives an integer parameter to this method and if the numerator and the denominator can be divided by parameter 
+        the method simplifies the rational number with this parameter. Else it returns the same rational number.
+        
+        Examples:
+            rational(6,12).simplify() --> rational(1,2)
+            rational(6,12).simplify(3) --> rational(2,4)
+            rational(6,12).simplify(7) --> rational(6,12)
 
+2) expanse():
+    
+     --> This method takes an parameter and expanses the rational number with this parameter. 
+    
+     --> If the parameter is a decimal number the method returns rational number based on initializing rules.
+            
+            Examples: 
+                rational(2,3).expanse(5) --> rational(10,15)
+                rational(1,2).expanse(2.5) --> rational(25,50)
 
 
 
                                                                                                        
-                                                                           ### Writed by Enes CANBAY ###
-                                                                        ### Last Update: December/6/2022 ###
+### Writed by Enes CANBAY ###
+### Last Update: December/8/2022 ###
