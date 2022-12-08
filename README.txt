@@ -8,6 +8,8 @@ A) __init__ phase:
 
 --> If the user inputs the decimal number(float), __init__ method converts the numerator and denominator to an integer based on mathematical rules. 
 
+--> If the user inputs a value other than float or integer, ParameterError occurs.
+
 
 METHODS:
 
