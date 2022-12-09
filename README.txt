@@ -35,8 +35,16 @@ METHODS:
                 rational(2,3).expanse(5) --> rational(10,15)
                 rational(1,2).expanse(2.5) --> rational(25,50)
 
+3)value():
+
+    --> This method returns the value of rational number.
+
+        Examples:
+            rational(2,1).value() --> 2.0
+            rational(3,2).value() --> 1.5
+
 
 
                                                                                                        
 ### Writed by Enes CANBAY ###
-### Last Update: December/8/2022 ###
+### Last Update: December/9/2022 ###
