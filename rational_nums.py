@@ -1,5 +1,8 @@
 """
 Class in python for rational nums.
+
+  ## Writed by Enes Canbay ##
+  ## Last Update: December/10/2022 ##
 """
 
 class Rational:
