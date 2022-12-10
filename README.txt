@@ -24,7 +24,7 @@ METHODS:
             rational(6,12).simplify() --> rational(1,2)
             rational(6,12).simplify(3) --> rational(2,4)
             rational(6,12).simplify(7) --> rational(6,12)
-            rational(3.5,7).simplify(3.5) --> rational(1,2)
+            rational(5,10).simplify(2.5) --> rational(2,4)
 
 2) expanse():
 
