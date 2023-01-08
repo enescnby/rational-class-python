@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+</head>
+<body>
+    <h1 id="h1">FİRST PAGE</h1>
+    <h2 id="h2">NEW TEXT</h2>
+    <div id="div"><button id="btn">CLİCK IT</button></div>
+
+    <style>
+        #h1{
+            text-align: center;
+        }
+        #h2{
+            text-align: center;
+        }
+        #div{
+            text-align: center;
+            background-color: aqua;
+            border-radius: 25px;
+        }
+    </style>
+    <script>
+        const my_button = document.getElementById("btn")
+        my_button.onclick = () => {
+            alert("YOU CLİCKED THE BUTTON")
+            document.getElementById("h1").innerHTML = "CHANGED BY BUTTON"
+        }
+        document.getElementById("h2").onclick = () => {
+            document.getElementById("h2").innerHTML = "YOU CLİCKED TO ME"
+        }
+    </script>
+</body>
+</html>
