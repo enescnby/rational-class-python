@@ -2,7 +2,7 @@
 Class in python for rational nums.
 
   ## Writed by Enes Canbay ##
-  ## Last Update: December/10/2023 ##
+  ## Last Update: February/7/2023 ##
 """
 
 class Rational:
