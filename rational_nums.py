@@ -2,7 +2,7 @@
 Class in python for rational nums.
 
   ## Writed by Enes Canbay ##
-  ## Last Update: December/10/2022 ##
+  ## Last Update: December/10/2023 ##
 """
 
 class Rational:
@@ -24,10 +24,12 @@ class Rational:
         """
 
         def __init__(self,error_source):
+
             message="The parameters of rational num's must be an integer or float not"
             self.msg=message+" "+error_source
 
         def __str__(self):
+
             return str(self.msg)
 
     class ZeroDenominatorError(Exception):
@@ -39,12 +41,15 @@ class Rational:
         """
 
         def __init__(self,message="Denominator can not be 0."):
+
             self.msg=message
 
         def __str__(self):
+
             return str(self.msg)
 
-    def __init__(self,numerator:int,denominator:int):
+    def __init__(self,numerator: int | float, denominator:int | float):
+
         if denominator==0:
             raise Rational.ZeroDenominatorError()
 
@@ -80,16 +85,45 @@ class Rational:
             self.denominator=int(denominator*10**exp_num)
             self.numerator=numerator*10**exp_num
 
+    def setnum(self, numerator : int | float) -> None:
+
+        """Sets the numerator"""
+
+        self.numerator = numerator
+        Rational.__init__(self, self.numerator, self.denominator)
+
+    def setden(self, denominator) -> None:
+
+        """Sets the denominator."""
+
+        self.denominator = denominator
+
+        Rational.__init__(self, self.numerator, self.denominator)
+
+    def getnum(self) -> int:
+
+        """Returns the numerator."""
+
+        return self.numerator
+
+    def getden(self) -> int:
+
+        """Returns the denominator."""
+
+        return self.denominator
 
     def __str__(self):
+
         return str(self.numerator)+"/"+str(self.denominator)
 
     def __add__(self,other):
+
         numerator=(self.denominator*other.numerator)+(self.numerator*other.denominator)
         denominator=self.denominator*other.denominator
         return Rational(numerator,denominator).simplify()
 
     def __sub__(self,other):
+
         numerator=self.numerator*other.denominator-self.denominator*other.numerator
         denominator=self.denominator*other.denominator
         if self>other:
@@ -97,21 +131,25 @@ class Rational:
         return Rational(numerator,denominator)
 
     def __mul__(self,other):
+
         numerator=self.numerator*other.numerator
         denominator=self.denominator*other.denominator
         return Rational(numerator,denominator)
 
     def __truediv__(self,other):
+
         numerator=self.numerator*other.denominator
         denominator=self.denominator*other.numerator
         return Rational(numerator,denominator)
 
     def __eq__(self,other):
+
         if self.numerator*other.denominator==self.denominator*other.numerator:
             return True
         return False
 
     def __ne__(self,other):
+
         value_self=self.numerator/self.denominator
         value_other=other.numerator/other.denominator
         if value_self!=value_other:
@@ -119,6 +157,7 @@ class Rational:
         return False
 
     def __gt__(self,other):
+
         value_self=self.numerator/self.denominator
         value_other=other.numerator/other.denominator
         if value_self>value_other:
@@ -126,6 +165,7 @@ class Rational:
         return False
 
     def __lt__(self,other):
+
         value_self=self.numerator/self.denominator
         value_other=other.numerator/other.denominator
         if value_self<value_other:
@@ -133,6 +173,7 @@ class Rational:
         return False
 
     def __ge__(self,other):
+
         value_self=self.numerator/self.denominator
         value_other=other.numerator/other.denominator
         if value_self>=value_other:
@@ -140,30 +181,27 @@ class Rational:
         return False
 
     def __le__(self,other):
+
         value_self=self.numerator/self.denominator
         value_other=other.numerator/other.denominator
         if value_self<=value_other:
             return True
         return False
 
-    def expanse(self,expansation_num):
+    def expanse(self,expansation_num : int | float) -> Rational:
 
         """
             --> This method takes an parameter and expanses
             the rational number with this parameter.\n
             --> If the parameter is a decimal number the method
             returns rational number based on initializing rules.\n
-            Examples:\n
-            \trational(2,3).expanse(5) --> rational(10,15)\n
-            \trational(1,2).expanse(2.5) --> rational(25,50)
-
         """
 
         numerator=self.numerator*expansation_num
         denominator=self.denominator*expansation_num
         return Rational(numerator,denominator)
 
-    def simplify(self,num=None):
+    def simplify(self, num : int | float = None) -> Rational:
 
         """
         --> This method makes the rational number the simplest if it has no parameter.\n
@@ -171,11 +209,6 @@ class Rational:
         the denominator can be divided by parameter the method simplifies
         the rational number with this parameter.
         Else it returns the same rational number.
-        \nExamples:
-        \trational(6,12).simplify() --> rational(1,2)\n
-        \trational(6,12).simplify(3) --> rational(2,4)\n
-        \trational(6,12).simplify(7) --> rational(6,12)\n
-        \trational(5,10).simplify(2.5) --> rational(2,4)
         """
 
         if num is None:
@@ -200,15 +233,9 @@ class Rational:
         return Rational(self.numerator,self.denominator)
 
 
-    def value(self):
+    def value(self) -> float:
 
-        """
-        --> This method returns the value of rational number.\n
-        Examples:
-        \trational(2,1).value() --> 2.0\n
-        \trational(3,2).value() --> 1.5
-
-        """
+        """This method returns the value of rational number."""
 
         value=self.numerator/self.denominator
         return value
