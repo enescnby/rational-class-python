@@ -13,6 +13,8 @@ Class in Python for rational numbers that symbolyzing like "5/6".
 
 * If the user inputs a value other than float or integer, ParameterError occurs.
 
++ If the user gives '0' to the denominator, ZeroDenominatorError occurs.
+
 
 ## Methods:
 
