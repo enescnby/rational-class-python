@@ -188,7 +188,7 @@ class Rational:
             return True
         return False
 
-    def expanse(self,expansation_num : int | float) -> Rational:
+    def expanse(self,expansation_num : int | float):
 
         """
             --> This method takes an parameter and expanses
@@ -201,7 +201,7 @@ class Rational:
         denominator=self.denominator*expansation_num
         return Rational(numerator,denominator)
 
-    def simplify(self, num : None | int | float = None) -> Rational:
+    def simplify(self, num : None | int | float = None):
 
         """
         --> This method makes the rational number the simplest if it has no parameter.\n
