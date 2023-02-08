@@ -1,6 +1,8 @@
 # Rational Nums Class In Python
 
+
 Class in Python for rational numbers that symbolyzing like "5/6".
+
 
 A) __init__ phase:
 
