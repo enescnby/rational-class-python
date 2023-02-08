@@ -2,7 +2,7 @@
 
 [Github Repository](https://github.com/enescnby/rational-class-python)
 
-Class in Python for rational numbers that symbolyzed like "5/6".
+Class in Python for rational numbers that symbolized like "5/6".
 
 
 ## Initializing Phase:
