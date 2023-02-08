@@ -1,37 +1,37 @@
-# Rational Nums Class In Python
+# RATIONAL NUMS CLASS IN PYTHON
 
 
 Class in Python for rational numbers that symbolyzing like "5/6".
 
 
-A) __init__ phase:
+## Initializing Phase:
 
---> The numerator and denominator of rational number must be an integer in this class.
++ The numerator and denominator of rational number must be an integer in this class.
 
---> If the user inputs the decimal number(float), __init__ method converts the numerator and denominator to an integer based on mathematical rules.
+- If the user inputs the decimal number(float), __init__ method converts the numerator and denominator to an integer based on mathematical rules.
 
---> If the user inputs a value other than float or integer, ParameterError occurs.
+* If the user inputs a value other than float or integer, ParameterError occurs.
 
 
-METHODS:
+## Methods:
 
-1) *setnum*(numerator : int | float) -> None :
+1 \) **setnum** (numerator : int | float) -> None :
 
-    --> This method sets the numerator with given parameter.
+      This method sets the numerator with given parameter.
 
-2) setden(denominator : int | float) -> None :
+2 \) **setden** (denominator : int | float) -> None :
 
-    --> This method sets the denominator with given parameter.
+      This method sets the denominator with given parameter.
 
-3) getnum() -> int :
+3 \) **getnum** () -> int :
 
-    --> This method returns the numerator.
+      This method returns the numerator.
 
-4) getden() -> int :
+4 \) **getden** () -> int :
 
-    --> This method returns the denominator.
+       This method returns the denominator.
 
-5) simplify(simplification_num : None | int | float) -> Rational:
+5 \) **simplify** (simplification_num : None | int | float) -> Rational:
 
     --> This method makes the rational number the simplest if it has no parameter.
 
@@ -44,7 +44,7 @@ METHODS:
             Rational(6,12).simplify(7) --> Rational(6,12)
             Rational(5,10).simplify(2.5) --> Rational(2,4)
 
-6) expanse(expansation_num : int | float) -> Rational:
+6 \) **expanse** (expansation_num : int | float) -> Rational:
 
      --> This method takes an parameter and expanses the rational number with this parameter.
 
@@ -54,7 +54,7 @@ METHODS:
                 Rational(2,3).expanse(5) --> Rational(10,15)
                 Rational(1,2).expanse(2.5) --> Rational(25,50)
 
-7)value() -> float:
+7 \) **value** () -> float:
 
     --> This method returns the value of rational number.
 
@@ -64,6 +64,5 @@ METHODS:
 
 
 
-
-#### Writed by Enes CANBAY
-#### Last Update: December/10/2022
+> ###### *Writed by Enes CANBAY*
+> ###### *Last Update: February/8/2023*
