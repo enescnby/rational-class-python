@@ -68,5 +68,5 @@ Class in Python for rational numbers that symbolyzing like "5/6".
 
 
 
-> ###### *Writed by Enes CANBAY*
+> ###### *Writed by [Enes Canbay](https://github.com/enescnby)*
 > ###### *Last Update: February/8/2023*
