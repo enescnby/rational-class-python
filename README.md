@@ -25,7 +25,7 @@ METHODS:
 
     --> This method returns the numerator.
 
-4 getden() -> int :
+4) getden() -> int :
 
     --> This method returns the denominator.
 
