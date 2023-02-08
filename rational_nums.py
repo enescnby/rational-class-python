@@ -201,7 +201,7 @@ class Rational:
         denominator=self.denominator*expansation_num
         return Rational(numerator,denominator)
 
-    def simplify(self, num : int | float = None) -> Rational:
+    def simplify(self, num : None | int | float = None) -> Rational:
 
         """
         --> This method makes the rational number the simplest if it has no parameter.\n
