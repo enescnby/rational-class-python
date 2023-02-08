@@ -15,11 +15,11 @@ Class in Python for rational numbers that symbolyzing like "5/6".
 
 ## Methods:
 
-1 \) **setnum** (numerator : int | float) -> None :
+1 \) **setnum** (numerator : int \| float) -> None :
 
       This method sets the numerator with given parameter.
 
-2 \) **setden** (denominator : int | float) -> None :
+2 \) **setden** (denominator : int \| float) -> None :
 
       This method sets the denominator with given parameter.
 
@@ -31,7 +31,7 @@ Class in Python for rational numbers that symbolyzing like "5/6".
 
        This method returns the denominator.
 
-5 \) **simplify** (simplification_num : None | int | float) -> Rational:
+5 \) **simplify** (simplification_num : None \| int \| float) -> Rational:
 
     --> This method makes the rational number the simplest if it has no parameter.
 
@@ -44,7 +44,7 @@ Class in Python for rational numbers that symbolyzing like "5/6".
             Rational(6,12).simplify(7) --> Rational(6,12)
             Rational(5,10).simplify(2.5) --> Rational(2,4)
 
-6 \) **expanse** (expansation_num : int | float) -> Rational:
+6 \) **expanse** (expansation_num : int \| float) -> Rational:
 
      --> This method takes an parameter and expanses the rational number with this parameter.
 
