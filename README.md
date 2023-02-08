@@ -13,7 +13,7 @@ A) __init__ phase:
 
 METHODS:
 
-1) setnum(numerator : int | float) -> None :
+1) *setnum*(numerator : int | float) -> None :
 
     --> This method sets the numerator with given parameter.
 
