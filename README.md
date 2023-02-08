@@ -63,5 +63,5 @@ METHODS:
 
 
 
-### Writed by Enes CANBAY ###
-### Last Update: December/10/2022 ###
+#### Writed by Enes CANBAY
+#### Last Update: December/10/2022
