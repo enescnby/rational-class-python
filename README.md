@@ -1,4 +1,4 @@
-# RATIONAL NUMS CLASS IN PYTHON
+# RATIONAL NUMBERS CLASS IN PYTHON
 
 [Github Repository](https://github.com/enescnby/rational-class-python)
 
