@@ -1,5 +1,5 @@
 """
-Class in python for rational nums.
+Class in python for rational numbers.
 
   ## Writed by Enes Canbay ##
   ## Last Update: February/7/2023 ##
