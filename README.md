@@ -1,8 +1,8 @@
-# RATIONAL NUMS CLASS IN PYTHON
+# RATIONAL NUMBERS CLASS IN PYTHON
 
 [Github Repository](https://github.com/enescnby/rational-class-python)
 
-Class in Python for rational numbers that symbolyzing like "5/6".
+Class in Python for rational numbers that symbolized like "5/6".
 
 
 ## Initializing Phase:
@@ -12,6 +12,8 @@ Class in Python for rational numbers that symbolyzing like "5/6".
 - If the user inputs the decimal number(float), __init__ method converts the numerator and denominator to an integer based on mathematical rules.
 
 * If the user inputs a value other than float or integer, ParameterError occurs.
+
++ If the user gives '0' to the denominator, ZeroDenominatorError occurs.
 
 
 ## Methods:
