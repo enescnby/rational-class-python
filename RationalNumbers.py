@@ -2,7 +2,7 @@
 Class in python for rational numbers.
 
   ## Wrote by Enes Canbay ##
-  ## Last Update: February/7/2023 ##
+  ## Last Update: February/12/2023 ##
 """
 from math import floor, ceil
 
