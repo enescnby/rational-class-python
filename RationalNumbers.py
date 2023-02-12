@@ -7,7 +7,7 @@ Class in python for rational numbers.
 from math import floor, ceil
 
 
-class Rational:
+class Rational(object):
     """
     Class in Python for rational numbers that symbolizing like "5/6".\n\n
     --> The numerator and denominator of rational number must be an integer in this class.\n
@@ -202,7 +202,7 @@ class Rational:
 
         return ceil(self.value())
 
-    def expanse(self, expansation_num: int | float):
+    def expanse(self, expansation_num: int | float) -> object:
         """
             --> This method takes a parameter and expanses
             the rational number with this parameter.\n
@@ -214,7 +214,7 @@ class Rational:
         denominator = self.denominator * expansation_num
         return Rational(numerator, denominator)
 
-    def simplify(self, num: None | int | float = None):
+    def simplify(self, num: None | int | float = None) -> object:
         """
         --> This method makes the rational number the simplest if it has no parameter.\n
         --> If the user gives an integer parameter to this method and if the numerator and
@@ -252,7 +252,7 @@ class Rational:
         return value
 
     @staticmethod
-    def to_rational(num: int | float):
+    def to_rational(num: int | float) -> object:
         """
         --> This method converts the given number to Rational.
         --> If the parameter is int, sets the denominator as 1.
