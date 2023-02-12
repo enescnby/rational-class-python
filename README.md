@@ -71,4 +71,4 @@ Class in Python for rational numbers that symbolized like "5/6".
 
 
 > ###### *Writed by [Enes Canbay](https://github.com/enescnby)*
-> ###### *Last Update: February/8/2023*
+> ###### *Last Update: February/08/2023*
