@@ -68,7 +68,12 @@ Class in Python for rational numbers that symbolized like "5/6".
             Rational(2,1).value() --> 2.0
             Rational(3,2).value() --> 1.5
 
+@staticmethod \
+8\) **to_rational**\(num : int \| float\) -> Rational :
 
+      --> This method converts the given number to Rational.
+      --> If the parameter is int, sets the denominator as 1.
+      --> If the parameter is float, it returns the simplified form.
 
-> ###### *Writed by [Enes Canbay](https://github.com/enescnby)*
-> ###### *Last Update: February/08/2023*
+> ###### *Written by [Enes Canbay](https://github.com/enescnby)*
+> ###### *Last Update: February/12/2023*
