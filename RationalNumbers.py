@@ -1,7 +1,7 @@
 """
 Class in python for rational numbers.
 
-  ## Wrote by Enes Canbay ##
+  ## Coded by Enes Canbay ##
   ## Last Update: February/12/2023 ##
 """
 from math import floor, ceil
