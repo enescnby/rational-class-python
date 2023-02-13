@@ -74,6 +74,11 @@ Class in Python for rational numbers that symbolized like "5/6".
       --> This method converts the given number to Rational.
       --> If the parameter is int, sets the denominator as 1.
       --> If the parameter is float, it returns the simplified form.
+      
+            Examples:
+            
+                  Rational.to_rational(5) -> Rational(5,1)
+                  Rational.to_rational(3.4) -> Rational(17,5)
 
 > ###### *Written by [Enes Canbay](https://github.com/enescnby)*
 > ###### *Last Update: February/12/2023*
