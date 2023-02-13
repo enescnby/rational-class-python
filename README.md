@@ -39,7 +39,7 @@ Class in Python for rational numbers that symbolized like "5/6".
     --> This method makes the rational number the simplest if it has no parameter.
 
     --> If the user gives an integer parameter to this method and if the numerator and the denominator can be divided by parameter
-        the method simplifies the rational number with this parameter. Else it returns the same rational number.
+        the method simplifies the rational number with this parameter.
 
         Examples:
 
