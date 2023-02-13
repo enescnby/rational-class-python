@@ -9,9 +9,9 @@ Class in Python for rational numbers that symbolized like "5/6".
 
 + The numerator and denominator of rational number must be an integer in this class.
 
-- If the user inputs the decimal number(float), __init__ method converts the numerator and denominator to an integer based on mathematical rules.
+- If the user inputs the decimal number(float) or Rational number, __init__ method converts the numerator and denominator to an integer based on mathematical rules.
 
-* If the user inputs a value other than float or integer, ParameterError occurs.
+* If the user inputs a value other than float, integer or Rational ParameterError occurs.
 
 + If the user gives '0' to the denominator, ZeroDenominatorError occurs.
 
