@@ -1,8 +1,8 @@
 # RATIONAL NUMBERS CLASS IN PYTHON
 
+[![Owner](https://img.shields.io/badge/owner-enescnby-blue)](https://github.com/enescnby) \
 [Github Repository](https://github.com/enescnby/rational-class-python)
 
-Class in Python for rational numbers that symbolized like "5/6".
 
 
 ## Initializing Phase:
@@ -80,5 +80,4 @@ Class in Python for rational numbers that symbolized like "5/6".
                   Rational.to_rational(5) -> Rational(5,1)
                   Rational.to_rational(3.4) -> Rational(17,5)
 
-> ###### *Written by [Enes Canbay](https://github.com/enescnby)*
 > ###### *Last Update: February/12/2023*
