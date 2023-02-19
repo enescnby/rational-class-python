@@ -11,9 +11,9 @@ class Rational(object):
     """
     Class in Python for rational numbers that symbolizing like "5/6".\n\n
     --> The numerator and denominator of rational number must be an integer in this class.\n
-    --> If the user inputs the decimal number(float), __init__ method converts the numerator
+    --> If the user inputs the decimal number(float) or Rational, __init__ method converts the numerator
     and denominator to an integer based on mathematical rules.\n
-    --> If the user inputs a value other than float or integer, ParameterError occurs.
+    --> If the user inputs a value other than float, integer or Rational, ParameterError occurs.
     """
 
     class ParameterError(Exception):
@@ -45,7 +45,7 @@ class Rational(object):
         def __str__(self):
             return str(self.msg)
 
-    def __init__(self, numerator: int | float, denominator: int | float):
+    def __init__(self, numerator: int | float | object, denominator: int | float | object):
 
         if denominator == 0:
             raise Rational.ZeroDenominatorError()
